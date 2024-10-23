@@ -1,8 +1,5 @@
 #:schema node_modules/wrangler/config-schema.json
 # wrangler.toml (wrangler v3.79.0^)
-[observability]
-enabled = true
-head_sampling_rate = 1
 
 
 name = "sublink-worker"
@@ -13,3 +10,9 @@ compatibility_flags = ["nodejs_compat"]
 kv_namespaces = [
   { binding = "SUBLINK_KV", id = "1234" }
 ]
+
+
+
+[observability]
+enabled = true
+head_sampling_rate = 1
